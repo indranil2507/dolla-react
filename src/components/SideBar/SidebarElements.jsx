@@ -13,6 +13,9 @@ export const SidebarContainer = styled.aside`
    top:0;
    left:0;
    transition:0.3s ease-in-out;
+   opacity: ${({isOpen})=>(isOpen ? '100%' : '0')};
+   top: ${({isOpen})=>(isOpen ? '0' : '-100%')};
+
   
 `;
 
@@ -68,6 +71,7 @@ export const Icon = styled.div`
  export const SideBtnWrap = styled.div`
     display: flex;
     justify-content: center;
+  
 
  `;
 
@@ -75,7 +79,7 @@ export const Icon = styled.div`
     border-radius: 50px;
     background: #01bf71;
     white-space: nowrap;
-    padding: 16px 64px;
+    padding: 16px 64px !important;
     color: #010606;
     display: flex;
     font-size: 1.5rem;
@@ -87,6 +91,7 @@ export const Icon = styled.div`
     align-items: center;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
+   
 
     &:hover{
         transition: ll 0.2s ease-in-out;

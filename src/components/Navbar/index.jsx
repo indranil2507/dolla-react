@@ -5,7 +5,7 @@ import {
 
 
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     return (
         <div>
           <Nav>
@@ -13,7 +13,7 @@ const Navbar = () => {
                   <NavLogo to='/'>
                       dolla
                   </NavLogo>
-                  <MobileIcon>
+                  <MobileIcon onClick={toggle}>
                       <FaBars/>
                   </MobileIcon>
                   

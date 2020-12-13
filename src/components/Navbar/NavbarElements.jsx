@@ -61,9 +61,9 @@ export const NavMenu = styled.ul`
   list-style: none;
   text-align: center;
   margin-right: -22px;
-  max-width:1100px
 
-  @media screen and (max-width: 760px){
+
+  @media screen and (max-width: 780px){
       display: none;
   }
 `
