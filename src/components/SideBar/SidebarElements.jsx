@@ -96,6 +96,6 @@ export const Icon = styled.div`
     &:hover{
         transition: ll 0.2s ease-in-out;
         background: #fff;
-        color: #010606
+        color: #010606;
     }
  `;
